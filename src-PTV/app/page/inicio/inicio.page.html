@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar class= "lila">
+    <ion-title>INICIO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class= "ion-padding">
+  <ion-img src= "assets/images/logo3.png"></ion-img>
+
+  <ion-item class= "ion-margin-top">
+    <ion-label position="floating">USUARIO</ion-label>
+    <ion-input [(ngModel)]= "modeloUsuario"></ion-input>
+  </ion-item>
+
+
+  <ion-item class= "ion-margin-top">
+    <ion-label position="floating">CONTRASEÑA</ion-label>
+    <ion-input type= "password" [(ngModel)]= "modeloContrasena"></ion-input>
+  </ion-item>
+
+  
+  <ion-button (click)="validarCredenciales()" 
+  class= "ion-margin-top lila" expand="full">INGRESAR</ion-button>
+
+
+</ion-content>
